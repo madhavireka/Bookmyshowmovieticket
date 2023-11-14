@@ -1,0 +1,9 @@
+package org.bookmyshowproject.repository;
+
+import org.bookmyshowproject.model.Bookticket;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookticketRepository extends JpaRepository<Bookticket, Integer> {
+	public Bookticket findById(int id);
+
+}
